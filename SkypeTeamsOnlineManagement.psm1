@@ -11,6 +11,7 @@ Any and all technical advice, scripts, and documentation are provided as is with
 Always review any code and steps before applying to a production system to understand their full impact.
 
 Version Notes
+V1.4 - 5/17/2020 - Improved performance of Connect-SkypeOnline
 V1.3 - 3/11/2018 - Update new license names; added Common Area Phone to license-related commands
 V1.2 - 11/11/2017 - Added Remove-SkypeOnlineNormalizationRule cmdlet
 V1.1 - 10/8/2017 - Add non-exported helper functions for AzureAD and Skype connections; fixed a few errors
