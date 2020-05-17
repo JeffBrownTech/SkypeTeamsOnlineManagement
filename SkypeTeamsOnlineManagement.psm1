@@ -1370,12 +1370,14 @@ function TestSkypeOnlineModule {
     [CmdletBinding()]
     param()
     
-    if ((Get-Module -ListAvailable).Name -notcontains "SkypeOnlineConnector") {        
+    $moduleInstalled = Get-Module -Name "SkypeOnlineconnector" -ListAvailable
+
+    if ($null -eq $moduleInstalled) {        
         return $false
     }
     else {
         try {
-            Import-Module -Name SkypeOnlineConnector
+            Import-Module -Name SkypeOnlineConnector -ErrorAction STOP
             return $true
         }
         catch {
